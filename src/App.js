@@ -1,11 +1,16 @@
 import React from "react";
 import "./App.css";
-import Counter from "./Counter.js";
+import {Article, Brand, CTA, Feature, Navbar} from './components';
+import Counter from './Counter.jsx'
 const App = () =>{
     return (
         <div>
-            <h1>Counter Application</h1>
             <Counter />
+            <Article />
+            <Brand />
+            <CTA />
+            <Feature />
+            <Navbar />
         </div>
     )
 }

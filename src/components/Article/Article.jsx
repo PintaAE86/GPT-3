@@ -5,5 +5,5 @@ const Article = () => {
     <div>Article</div>
   )
 }
-
+//these are getting exported as default modules
 export default Article
