@@ -1,12 +1,12 @@
 import React from "react";
-import "./App.css";
+
 import { Blog, Feature, Footer, Header, Possiblity, GPT3 } from "./container";
 import {Article, Brand, CTA, Navbar} from './components';
-import Counter from './Counter.jsx'
+
 const App = () =>{
     return (
         <div className="App">
-          <div className="gradiebt_bg">
+          <div className="gradient__bg">
             <Navbar />
             <Header />
           </div>
