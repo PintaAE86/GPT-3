@@ -10,15 +10,25 @@ module.exports = {
       publicPath: "/dist/",
       filename: "bundle.js"
     },
+    resolve: {
+      extensions: ['.js', '.jsx'],
+    },
     module : {
         rules : [
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                use: {
+                  use: {
                   loader: 'babel-loader',//npm install babel-loader @babel/core @babel/preset-env --save-dev
                 },
               },
+                {
+                    test: /\.jsx$/,
+                    exclude: /node_modules/,
+                      use: {
+                        loader: 'babel-loader'
+                      }
+                },
               // Use style-loader and css-loader for handling CSS files
               {
                 test: /\.css$/,
@@ -41,4 +51,5 @@ module.exports = {
         port: 3000,
         open: true,
     }
+    //when using a server to access the file on the same project, you need to understand proxies better 
 }

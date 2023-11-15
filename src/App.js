@@ -1,11 +1,22 @@
 import React from "react";
-import "./App.css";
-import Counter from "./Counter.js";
+
+import { Blog, Feature, Footer, Header, Possiblity, GPT3 } from "./container";
+import {Article, Brand, CTA, Navbar} from './components';
+
 const App = () =>{
     return (
-        <div>
-            <h1>Counter Application</h1>
-            <Counter />
+        <div className="App">
+          <div className="gradient__bg">
+            <Navbar />
+            <Header />
+          </div>
+          <Brand />
+          <GPT3 />
+          <Feature />
+          <Possiblity />
+          <CTA />
+          <Blog />
+          <Footer />
         </div>
     )
 }
